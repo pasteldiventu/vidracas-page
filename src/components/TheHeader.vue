@@ -1,8 +1,8 @@
 <template>
   <header class="site-header">
     <div class="brand-name">
+     <img src="/Gemini_Generated_Image_3vw5bm3vw5bm3vw5-fotor-202507219421.png" style="width: 40px;">
       <a href="#">Banda Vidraças</a>
-      <img src="/Gemini_Generated_Image_3vw5bm3vw5bm3vw5-fotor-202507219421.png">
     </div>
     <nav class="main-nav">
       <ul>
