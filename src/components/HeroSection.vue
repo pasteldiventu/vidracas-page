@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('public/image.png');
+  background-image: url('/image.png');
   background-size: cover;
   background-position: center;
 }
