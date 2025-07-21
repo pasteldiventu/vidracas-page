@@ -17,6 +17,19 @@ a,
   }
 }
 
+h1, h2, .band-name {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 500;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  margin: 0;
+  background-color: #121212;
+  color: #fff;
+  padding-top: 70px; 
+}
+
 .container {
   width: 100%;
   max-width: 1200px;

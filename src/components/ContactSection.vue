@@ -40,8 +40,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espaçamento entre os ícones */
-  flex-wrap: wrap; /* Permite que os ícones quebrem a linha em telas menores */
+  gap: 20px;
+  flex-wrap: wrap; 
 }
 
 .social-link {
@@ -52,6 +52,9 @@ h2 {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 .social-link:hover {

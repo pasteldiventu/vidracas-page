@@ -33,11 +33,24 @@
   box-sizing: border-box; /* Garante que o padding não aumente a largura total */
 }
 
+.brand-name {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.brand-name img {
+  width: 40px; 
+
+}
+
 .brand-name a {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 800;
 }
 
 .main-nav ul {
@@ -51,7 +64,9 @@
 .main-nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 800;
   transition: color 0.3s ease;
 }
 

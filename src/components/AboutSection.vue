@@ -8,13 +8,15 @@
         </div>
         <div class="about-text">
           <p>
-            Historia mt massa da banda com as influências, os primeiros shows.OSCARALHO A QUATRO MEMO.
+            Formada pelo Ange no vocal, Alexandre na guitarra, Jp no baixo e Lincoln na bateria, a banda cuiabana Vidraças mistura metal alternativo
+            com influências do rock indie, formada em janeiro de 2025, a banda busca criar um som envolvente e tocante que ressoe com o público.
           </p>
           <p>
-            popipí popopo pipipi bababa blabla rtlgd qau aquelas coisa!
+            Com letras que falam sobre amor, solidão e a busca por significado nessa vida, a Vidraças se destaca por despejar todas as frustrações e sentimentos de um jovem adulto perdido
+            em suas músicas, criando uma conexão profunda com os ouvintes e convidando-os a embarcar em uma jornada emocional através das músicas.
           </p>
           <p>
-            Mt foda mano agor auma mensagem tipo"Siga-nos nas redes sociais para não perder nenhuma novidade!".
+            A banda está atualmente trabalhando em seu primeiro EP, que promete trazer uma mistura única de melodias cativantes e letras introspectivas, refletindo a essência da vida moderna.
           </p>
         </div>
       </div>
@@ -23,13 +25,12 @@
 </template>
 
 <script setup>
-// Nenhuma lógica de script necessária para esta seção estática.
 </script>
 
 <style scoped>
 section {
   padding: 60px 0;
-  background-color: #181818; /* Um fundo um pouco diferente para destacar a seção */
+  background-color: #181818; 
 }
 
 h2 {
@@ -42,12 +43,12 @@ h2 {
   display: flex;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap; /* Faz com que o layout se ajuste em telas menores */
+  flex-wrap: wrap;
 }
 
 .about-image {
-  flex: 1; /* Ocupa uma parte do espaço */
-  min-width: 300px; /* Largura mínima antes de quebrar a linha */
+  flex: 1; 
+  min-width: 300px; 
 }
 
 .about-image img {

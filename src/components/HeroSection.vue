@@ -18,7 +18,7 @@
   background-position: center;
 }
 .band-name {
-  font-size: 4rem;
+  font-size: 6rem;
   color: white;
   text-shadow: 2px 2px 8px #000;
 }
