@@ -1,7 +1,7 @@
 <script setup>
 const socialLinks = [
-  { name: 'Email', url: 'mailto:sua-banda@email.com', iconName: 'mail' },
-  { name: 'Instagram', url: 'https://instagram.com/seu-usuario', iconName: 'instagram' },
+  { name: 'Email', url: 'mailto:bandavidracas@gmail.com', iconName: 'mail' },
+  { name: 'Instagram', url: 'https://www.instagram.com/bandavidracas', iconName: 'instagram' },
   { name: 'YouTube', url: 'https://www.youtube.com/@BandaVidraças', iconName: 'youtube' },
 ];
 </script>
