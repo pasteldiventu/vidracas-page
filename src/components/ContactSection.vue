@@ -1,13 +1,13 @@
 <script setup>
 const socialLinks = [
-  { name: 'Email', url: 'mailto:bandavidracas@gmail.com', iconName: 'mail' },
-  { name: 'Instagram', url: 'https://www.instagram.com/bandavidracas', iconName: 'instagram' },
-  { name: 'YouTube', url: 'https://www.youtube.com/@BandaVidraças', iconName: 'youtube' },
+  { name: 'Email', url: 'mailto:bandavidracas@gmail.com', iconClass: 'fas fa-envelope' },
+  { name: 'Instagram', url: 'https://www.instagram.com/bandavidracas', iconClass: 'fab fa-instagram' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@BandaVidraças', iconClass: 'fab fa-youtube' },
 ];
 </script>
 
 <template>
-    <section id="contato" class="contact-section">
+  <section id="contato" class="contact-section">
     <h2>Siga-nos / Contato</h2>
     <div class="social-links">
       <a
@@ -18,7 +18,7 @@ const socialLinks = [
         rel="noopener noreferrer"
         class="social-link"
       >
-        <component :is="link.icon" class="icon" />
+        <i :class="`${link.iconClass} icon`"></i>
         <span>{{ link.name }}</span>
       </a>
     </div>
@@ -40,7 +40,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   flex-wrap: wrap; 
 }
 
@@ -48,7 +48,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -58,12 +58,11 @@ h2 {
 }
 
 .social-link:hover {
-  color: #1db954; /* Um verde inspirado no Spotify */
+  color: #1db954;
   transform: scale(1.1);
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  font-size: 32px;
 }
 </style>

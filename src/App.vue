@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection.vue';
 import TourSection from './components/TourSection.vue';
 import ContactSection from './components/ContactSection.vue';
 import TheFooter from './components/TheFooter.vue';
+import VideoSection from './components/VideoSection.vue';
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import TheFooter from './components/TheFooter.vue';
     <HeroSection />
     <MusicSection />
     <AboutSection />
+    <VideoSection />
     <TourSection />
     <ContactSection />
   </main>
