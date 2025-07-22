@@ -65,4 +65,18 @@ h2 {
 .icon {
   font-size: 32px;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
 </style>

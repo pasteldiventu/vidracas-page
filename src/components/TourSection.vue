@@ -42,6 +42,26 @@ const processedShows = computed(() => {
 </template>
 
 <style scoped>
+@media (max-width: 768px) {
+  .show-list li {
+    flex-direction: column;    
+    align-items: flex-start;
+    gap: 8px;                  
+  }
+
+  .tickets-link, .status-past {
+    margin-top: 10px;
+    width: 100%;          
+    text-align: center;
+    box-sizing: border-box;  
+  }
+  
+  a.tickets-link {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
 .show-list {
   list-style: none;
   padding: 0;

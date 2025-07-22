@@ -19,4 +19,10 @@ section {
   padding: 40px 0;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
 </style>

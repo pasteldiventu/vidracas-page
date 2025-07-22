@@ -22,4 +22,14 @@
   color: white;
   text-shadow: 2px 2px 8px #000;
 }
+@media (max-width: 768px) {
+  .band-name {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
 </style>

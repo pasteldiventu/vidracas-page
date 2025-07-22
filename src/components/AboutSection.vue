@@ -28,6 +28,13 @@
 </script>
 
 <style scoped>
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; 
+    text-align: center;
+  }
+}
 section {
   padding: 60px 0;
   background-color: #181818; 
