@@ -18,7 +18,7 @@ const socialLinks = [
       <h2 ref="titleRef" class="fade-in-on-scroll">Contato</h2>
 
       <form 
-        action="https://formspree.io/f/SUA_URL_AQUI" 
+        action="https://formspree.io/f/xeozajzw" 
         method="POST"
         ref="formRef"
         class="contact-form fade-in-on-scroll"
@@ -32,7 +32,7 @@ const socialLinks = [
           <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-          <label for="message">Mensagem</label>
+          <label for="message">Sua Mensagem</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <button type="submit" class="submit-btn">Enviar Mensagem</button>
