@@ -3,10 +3,11 @@ import TheHeader from './components/TheHeader.vue';
 import HeroSection from './components/HeroSection.vue';
 import MusicSection from './components/MusicSection.vue';
 import AboutSection from './components/AboutSection.vue';
-import TourSection from './components/TourSection.vue';
+//import TourSection from './components/TourSection.vue';
 import ContactSection from './components/ContactSection.vue';
 import TheFooter from './components/TheFooter.vue';
 import VideoSection from './components/VideoSection.vue';
+import TourSectionBackup from './components/TourSectionBackup.vue'; 
 </script>
 
 <template>
@@ -17,7 +18,7 @@ import VideoSection from './components/VideoSection.vue';
     <MusicSection />
     <AboutSection />
     <VideoSection />
-    <TourSection />
+    <TourSectionBackup/>
     <ContactSection />
   </main>
   <TheFooter />
