@@ -28,7 +28,7 @@ const socialLinks = [
 <style scoped>
 .contact-section {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px 20px;
   background-color: #181818;
 }
 

@@ -2,9 +2,9 @@
 import { computed } from 'vue';
 
 const shows = [
-  { date: '08/08/2025', city: 'Beco do Papa', venue: 'Niver Bel Priori' },
-  { date: '25/07/2025', city: 'Parque Cuiabá', venue: 'Fazer Musical' },
-  { date: '21/06/2025', city: 'Beco do Papa', venue: 'Soulfest 2a edição' },
+  { date: '08/08/2025', place: 'Beco do Papa', venue: 'Niver Bel Priori' },
+  { date: '25/07/2025', place: 'Parque Cuiabá', venue: 'Fazer Musical' },
+  { date: '21/06/2025', place: 'Beco do Papa', venue: 'Soulfest 2a edição' },
 ];
 
 const processedShows = computed(() => {
@@ -30,11 +30,11 @@ const processedShows = computed(() => {
       <ul class="show-list">
         <li v-for="show in processedShows" :key="show.date" :class="{ 'past-show': show.isPast }">
           <span class="date">{{ show.date }}</span>
-          <span class="city">{{ show.city }}</span>
+          <span class="city">{{ show.place }}</span>
           <span class="venue">{{ show.venue }}</span>
 
-          <a v-if="!show.isPast" href="#" class="tickets-link">Ingressos</a>
-          <span v-else class="status-past">Já foi</span>
+          <a v-if="!show.isPast" href="#" class="tickets-link">Te esperamos lá!</a>
+          <span v-else class="status-past">Evento finalizado!</span>
         </li>
       </ul>
     </div>
@@ -74,6 +74,10 @@ const processedShows = computed(() => {
   padding: 15px;
   border-bottom: 1px solid #333;
   transition: all 0.3s ease;
+}
+
+.show-list li:last-child {
+border-bottom: none;
 }
 
 .past-show {

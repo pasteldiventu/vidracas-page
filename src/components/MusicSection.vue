@@ -1,23 +1,32 @@
 <template>
   <section id="musica">
-    <h2>Ouça nosso último single</h2>
-    <iframe
-      style="border-radius:12px"
-      src="https://open.spotify.com/embed/track/2fOqL625KBELheE1Zx2hHu?utm_source=generator"
-      width="100%"
-      height="152"
-      frameBorder="0"
-      allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
+    <div class="container">
+      <h2>Ouça nosso último single</h2>
+      
+      <iframe
+        style="border-radius:12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);"
+        src="https://open.spotify.com/embed/track/2fOqL625KBELheE1Zx2hHu?utm_source=generator"
+        width="100%"
+        height="152"
+        frameBorder="0"
+        allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
   </section>
 </template>
 
 <style scoped>
 section {
-  padding: 40px 0;
+  padding: 60px 0;
+  background-color: #181818; 
+}
+
+h2 {
   text-align: center;
+  margin-bottom: 40px; 
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {

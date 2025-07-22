@@ -7,7 +7,7 @@
 
 <style scoped>
 .hero {
-  height: 80vh;
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
