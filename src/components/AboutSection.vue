@@ -1,5 +1,10 @@
+<script setup>
+import { useScrollAnimation } from '@/composables/useScrollAnimation.js';
+const { elementRef } = useScrollAnimation();
+</script>
+
 <template>
-  <section id="sobre">
+  <section id="sobre" ref="elementRef" class="fade-in-on-scroll">
     <div class="container">
       <h2>Sobre Nós</h2>
       <div class="about-content">
@@ -23,9 +28,6 @@
     </div>
   </section>
 </template>
-
-<script setup>
-</script>
 
 <style scoped>
 

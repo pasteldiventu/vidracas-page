@@ -1,15 +1,25 @@
+<script setup>
+import { useScrollAnimation } from '@/composables/useScrollAnimation.js';
+const { elementRef: titleRef } = useScrollAnimation();
+const { elementRef: playerRef } = useScrollAnimation();
+</script>
+
 <template>
   <section id="musica">
     <div class="container">
-      <h2>Ouça nosso último single</h2>
+      <h2 ref="titleRef" class="fade-in-on-scroll">
+        Ouça nosso último single
+      </h2>
       
       <iframe
+        ref="playerRef"
+        class="spotify-player fade-in-on-scroll"
         style="border-radius:12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);"
         src="https://open.spotify.com/embed/track/2fOqL625KBELheE1Zx2hHu?utm_source=generator"
         width="100%"
         height="152"
         frameBorder="0"
-        allowfullscreen
+        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
@@ -27,6 +37,10 @@ h2 {
   text-align: center;
   margin-bottom: 40px; 
   font-size: 2rem;
+}
+
+.spotify-player.fade-in-on-scroll {
+  transition-delay: 0.2s;
 }
 
 @media (max-width: 768px) {

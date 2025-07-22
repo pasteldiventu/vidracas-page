@@ -11,7 +11,7 @@
 .site-footer {
   text-align: center;
   padding: 20px;
-  background-color: #1a1a1a;
+  background-color: rgba(18, 18, 18, 0.8);
   color: #888;
   font-size: 0.9em;
 }

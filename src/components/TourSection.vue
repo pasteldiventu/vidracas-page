@@ -1,6 +1,9 @@
 <script setup>
 import { computed } from 'vue';
 
+import { useScrollAnimation } from '@/composables/useScrollAnimation.js';
+const { elementRef } = useScrollAnimation();
+
 const shows = [
   { date: '08/08/2025', place: 'Beco do Papa', venue: 'Niver Bel Priori' },
   { date: '25/07/2025', place: 'Parque Cuiabá', venue: 'Fazer Musical' },
@@ -25,7 +28,7 @@ const processedShows = computed(() => {
 
 <template>
   <section id="agenda">
-    <div class="container">
+    <div class="container"  ref="elementRef">
       <h2>Agenda de Shows</h2>
       <ul class="show-list">
         <li v-for="show in processedShows" :key="show.date" :class="{ 'past-show': show.isPast }">

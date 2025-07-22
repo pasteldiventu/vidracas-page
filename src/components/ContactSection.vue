@@ -1,4 +1,8 @@
 <script setup>
+import { useScrollAnimation } from '@/composables/useScrollAnimation.js';
+const { elementRef: titleRef } = useScrollAnimation();
+const { elementRef: linksRef } = useScrollAnimation();
+
 const socialLinks = [
   { name: 'Email', url: 'mailto:bandavidracas@gmail.com', iconClass: 'fas fa-envelope' },
   { name: 'Instagram', url: 'https://www.instagram.com/bandavidracas', iconClass: 'fab fa-instagram' },
@@ -8,24 +12,31 @@ const socialLinks = [
 
 <template>
   <section id="contato" class="contact-section">
-    <h2>Siga-nos / Contato</h2>
-    <div class="social-links">
-      <a
-        v-for="link in socialLinks"
-        :key="link.name"
-        :href="link.url"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-link"
-      >
-        <i :class="`${link.iconClass} icon`"></i>
-        <span>{{ link.name }}</span>
-      </a>
+    <div class="container">
+      <h2 ref="titleRef" class="fade-in-on-scroll">Siga-nos / Contato</h2>
+
+      <div class="social-links fade-in-on-scroll" ref="linksRef">
+        <a
+          v-for="link in socialLinks"
+          :key="link.name"
+          :href="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+        >
+          <i :class="`${link.iconClass} icon`"></i>
+          <span>{{ link.name }}</span>
+        </a>
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.social-links.fade-in-on-scroll {
+  transition-delay: 0.2s; 
+}
+
 .contact-section {
   text-align: center;
   padding: 60px 20px 20px;
@@ -69,14 +80,11 @@ h2 {
   h2 {
     font-size: 1.8rem;
   }
-
   .social-links {
     gap: 20px;
   }
-  
   .icon {
-    width: 28px;
-    height: 28px;
+    font-size: 28px;
   }
 }
 </style>
