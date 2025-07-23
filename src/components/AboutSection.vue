@@ -9,7 +9,7 @@ const { elementRef } = useScrollAnimation();
       <h2>Sobre Nós</h2>
       <div class="about-content">
         <div class="about-image">
-          <img src="/backDAVIDRACA.jpeg" alt="Foto da Banda Vidraças">
+          <img src="/backDAVIDRACA.png" alt="Foto da Banda Vidraças">
         </div>
         <div class="about-text">
           <p>
