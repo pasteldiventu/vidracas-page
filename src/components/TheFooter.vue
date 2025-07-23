@@ -1,6 +1,6 @@
 <template>
   <footer class="site-footer">
-    <p>&copy; {{ new Date().getFullYear() }} Banda Vidraças. Todos os direitos reservados.</p>
+    <p>&copy; {{ new Date().getFullYear() }} Banda Vidraças. Todos os direitos reservados. desenvolvido por: @techinov</p>
   </footer>
 </template>
 
