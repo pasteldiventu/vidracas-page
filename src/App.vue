@@ -15,8 +15,8 @@ import TourSectionBackup from './components/TourSectionBackup.vue';
   <TheHeader />
   <main>
     <HeroSection />
-    <MusicSection />
     <AboutSection />
+    <MusicSection />
     <VideoSection />
     <TourSectionBackup/>
     <ContactSection />

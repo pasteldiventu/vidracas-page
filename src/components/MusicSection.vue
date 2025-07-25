@@ -30,7 +30,7 @@ const { elementRef: playerRef } = useScrollAnimation();
 <style scoped>
 section {
   padding: 60px 0;
-  background-color: #181818; 
+  background-color: #3d0808c7; 
 }
 
 h2 {

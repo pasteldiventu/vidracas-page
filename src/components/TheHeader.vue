@@ -48,7 +48,7 @@ function toggleMenu() {
   left: 0;
   width: 100%;
   padding: 15px 5%;
-  background-color: rgba(18, 18, 18, 0.8);
+  background-color: rgba(14, 14, 14, 0.911);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;

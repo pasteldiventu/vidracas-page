@@ -3,7 +3,7 @@ import { computed } from 'vue';
 
 const shows = [
   { date: '08/08/2025', city: 'Beco do Papa', venue: 'Niver Bel Priori' },
-  { date: '25/07/2025', city: 'Parque Cuiabá', venue: 'Fazer Musical' },
+  { date: '08/08/2025', city: 'Parque Cuiabá', venue: 'Fazer Musical' },
   { date: '21/06/2025', city: 'Beco do Papa', venue: 'Soulfest 2a edição' },
 ];
 
@@ -34,7 +34,7 @@ const processedShows = computed(() => {
           <span class="venue">{{ show.venue }}</span>
 
           <a v-if="!show.isPast" href="#" class="tickets-link">Ingressos</a>
-          <span v-else class="status-past">Já foi</span>
+          <span v-else class="status-past">Evento Finalizado</span>
         </li>
       </ul>
     </div>
