@@ -85,20 +85,21 @@ onMounted(() => {
 <style scoped>
 /* ✨ ESTILOS ATUALIZADOS */
 .contact-section {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #121212;
   color: #fff;
 }
 
 h2, h3 {
   text-align: center;
-  margin-bottom: 40px;
+  font-size: 2.0rem;
+  margin-bottom: 10px;
 }
 
 h3 {
-  margin-top: 60px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5rem;
+  margin-top: 25px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.8rem;
 }
 
 .contact-form {
@@ -107,7 +108,7 @@ h3 {
   transition-delay: 0.2s;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .form-group {
@@ -149,6 +150,7 @@ h3 {
 }
 
 .submit-btn {
+  margin-top: 30px;
   display: block;
   width: 100%;
   padding: 15px;
@@ -179,7 +181,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  margin-top: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 

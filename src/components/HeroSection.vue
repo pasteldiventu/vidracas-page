@@ -18,10 +18,8 @@
   background-image: url('/image.png');
   background-size: cover;
   background-position: center;
-  overflow: hidden; /* Importante para a animação não vazar */
+  overflow: hidden;
 }
-
-/* --- A MÁGICA DA ANIMAÇÃO DO TÍTULO --- */
 
 .band-name {
   font-size: 6rem;

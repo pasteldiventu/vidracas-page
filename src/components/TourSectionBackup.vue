@@ -42,10 +42,23 @@ const processedShows = computed(() => {
 </template>
 
 <style scoped>
+
+#agenda{
+  background-color: rgba(14, 14, 14, 0.911);
+  padding-bottom: 40px;
+}
+
 .show-list {
   list-style: none;
   padding: 0;
 }
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
 
 .show-list li {
   display: flex;
