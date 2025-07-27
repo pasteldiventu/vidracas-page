@@ -3,8 +3,10 @@ import { computed } from 'vue';
 
 const shows = [
   { date: '08/08/2025', city: 'Beco do Papa', venue: 'Niver Bel Priori' },
-  { date: '08/08/2025', city: 'Parque Cuiabá', venue: 'Fazer Musical' },
+  { date: '08/08/2025', city: 'Parque Cuiabá', venue:'Fazer Musical' },
   { date: '21/06/2025', city: 'Beco do Papa', venue: 'Soulfest 2a edição' },
+  { date: '23/05/2025', city: 'Beco do Papa', venue: 'Capivara Aniversário' },
+  { date: '29/03/2025', city: 'Casa das Pretas', venue: 'Especial 1 ano batalha das batalhas' },
 ];
 
 const processedShows = computed(() => {
@@ -26,7 +28,7 @@ const processedShows = computed(() => {
 <template>
   <section id="agenda">
     <div class="container">
-      <h2>Agenda de Shows</h2>
+      <h2>Agenda de Shows 2025</h2>
       <ul class="show-list">
         <li v-for="show in processedShows" :key="show.date" :class="{ 'past-show': show.isPast }">
           <span class="date">{{ show.date }}</span>

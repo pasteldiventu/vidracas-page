@@ -38,7 +38,7 @@ const processedShows = computed(() => {
 <template>
   <section id="agenda">
     <div class="container">
-      <h2>Agenda de Shows</h2>
+      <h2>Agenda de Shows 2025</h2>
 
       <div v-if="isLoading" class="loading-state">Carregando agenda...</div>
       
