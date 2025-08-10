@@ -15,7 +15,7 @@ const { elementRef: playerRef } = useScrollAnimation();
         ref="playerRef"
         class="spotify-player fade-in-on-scroll"
         style="border-radius:12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);"
-        src="https://open.spotify.com/embed/track/2fOqL625KBELheE1Zx2hHu?utm_source=generator"
+        src="https://open.spotify.com/embed/track/79IKuVmsZcxWGg3oG8LL8i?utm_source=generator"
         width="100%"
         height="152"
         frameBorder="0"
