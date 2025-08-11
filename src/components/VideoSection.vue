@@ -11,7 +11,7 @@ const { elementRef: videoRef } = useScrollAnimation();
       
       <div class="video-responsive-container fade-in-on-scroll" ref="videoRef">
         <iframe 
-          src="https://www.youtube.com/embed/gUJbqCDUjnU?si=xG1zhkcsKFJrkJj9"
+          src="https://www.youtube.com/embed/HOaCLIPbeh0?si=6Q-UzD6FhD8vaWdo"
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
