@@ -13,7 +13,7 @@ const { elementRef } = useScrollAnimation();
         </div>
         <div class="about-text">
           <p>
-            Formada pelo Ange no vocal, Xandi na guitarra, Jp no baixo e Link na bateria, a banda cuiabana Vidraças mistura metal alternativo
+            Formada pelo Juno no vocal, Xandi e Matias na guitarra, Jp no baixo e Link na bateria, a banda cuiabana Vidraças mistura metal alternativo
             com influências do rock indie, formada em janeiro de 2025, a banda busca criar um som envolvente e tocante que ressoe com o público.
           </p>
           <p>
