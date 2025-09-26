@@ -2,12 +2,12 @@
 import { computed } from 'vue';
 
 const shows = [
-  { date: '13/12/2025', city: 'Beco do Papa', venue: 'Vidraças convida: 1ª edição.' },
-  { date: '24/10/2025', city: 'Beco do Papa', venue: 'LORD 2025, A REUNIÃO' },
-  { date: '08/08/2025', city: 'Beco do Papa', venue: 'Niver Bel Priori' },
-  { date: '08/08/2025', city: 'Parque Cuiabá', venue:'Fazer Musical' },
-  { date: '21/06/2025', city: 'Beco do Papa', venue: 'Soulfest 2a edição' },
-  { date: '23/05/2025', city: 'Beco do Papa', venue: 'Capivara Aniversário' },
+  { date: '13/12/2025', city: 'Beco do Papa', venue: 'Vidraças convida: 1ª edição.', link:'https://www.sympla.com.br/evento/vidracas-convida-bella-e-o-olmo-da-bruxa/3125921'},
+  { date: '24/10/2025', city: 'Beco do Papa', venue: 'LORD 2025, A REUNIÃO', link:''},
+  { date: '08/08/2025', city: 'Beco do Papa', venue: 'Niver Bel Priori', },
+  { date: '08/08/2025', city: 'Parque Cuiabá', venue:'Fazer Musical', },
+  { date: '21/06/2025', city: 'Beco do Papa', venue: 'Soulfest 2a edição', },
+  { date: '23/05/2025', city: 'Beco do Papa', venue: 'Capivara Aniversário',},
   { date: '29/03/2025', city: 'Casa das Pretas', venue: 'Especial 1 ano batalha das batalhas' },
 ];
 
@@ -37,7 +37,17 @@ const processedShows = computed(() => {
           <span class="city">{{ show.city }}</span>
           <span class="venue">{{ show.venue }}</span>
 
-          <a v-if="!show.isPast" href="#" class="tickets-link">Ingressos</a>
+          <a 
+            v-if="!show.isPast && show.link" 
+            :href="show.link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="tickets-link"
+          >
+            Ingressos
+          </a>
+
+          <span v-else-if="!show.isPast" class="no-tickets">Em breve</span>
           <span v-else class="status-past">Evento Finalizado</span>
         </li>
       </ul>
