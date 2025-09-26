@@ -3,7 +3,7 @@ import { computed } from 'vue';
 
 const shows = [
   { date: '13/12/2025', city: 'Beco do Papa', venue: 'Vidraças convida: 1ª edição.', link:'https://www.sympla.com.br/evento/vidracas-convida-bella-e-o-olmo-da-bruxa/3125921'},
-  { date: '24/10/2025', city: 'Beco do Papa', venue: 'LORD 2025, A REUNIÃO', link:''},
+  { date: '24/10/2025', city: 'Beco do Papa', venue: 'LORD 2025, A REUNIÃO', link:'https://www.sympla.com.br/evento/lordcrossroad-reunion/3141886'},
   { date: '08/08/2025', city: 'Beco do Papa', venue: 'Niver Bel Priori', },
   { date: '08/08/2025', city: 'Parque Cuiabá', venue:'Fazer Musical', },
   { date: '21/06/2025', city: 'Beco do Papa', venue: 'Soulfest 2a edição', },
